@@ -1,6 +1,6 @@
 # Quote Card 组件规范与 Chrome CDP 捕获
 
-本文档详述在不使用 Remotion 的前提下，如何用纯 HTML/CSS/GSAP 构建并录制广播级引言卡片。
+本文档详述如何通过 Web-as-Video 架构，使用纯 HTML/CSS/GSAP 构建并由 Chrome CDP 录制广播级引言卡片。
 
 ---
 
@@ -8,7 +8,7 @@
 
 1. **排版质感**：原生支持现代排版特性（Subpixel 抗锯齿、Kerning 字距、Web Font、CSS Backdrop Filter 高斯模糊）。
 2. **确定性时间轴**：通过页面上的 `?t=1.5` 参数，或者通过 CDP `Page.captureScreenshot` / `Emulation.setVirtualTimeBudget` 进行逐帧离线捕获，杜绝掉帧、抖动与不同步。
-3. **零框架污染**：不需要 React、Webpack、Babel 或 Remotion 依赖，单文件 HTML 即开即录。
+3. **零构建包袱**：不需要复杂的运行时或打包捆绑，单文件 HTML 即开即录。
 
 ---
 

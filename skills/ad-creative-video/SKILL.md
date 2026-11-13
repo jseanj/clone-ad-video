@@ -8,7 +8,7 @@ version: 1.0.0
 
 构建 1 套标准数据驱动的广告工程模型，通过表格/CSV 批量生产 N 个变体——测试不同的 Hook、利益点、Proof 背书与 CTA，帮助效果广告优化师在 Meta Feed、TikTok、Reels 与 YouTube 上进行精确的单变量 A/B 测试。
 
-**技术底座**：彻底剔除 Remotion，全面基于 `clone-any-video` 引擎（SVML 语义剧本 + Web-as-Video Chrome CDP 捕获 + FFmpeg 压制）。
+**技术底座**：全面基于 `clone-any-video` 确定性媒体引擎（SVML 语义剧本 + Web-as-Video Chrome CDP 捕获 + FFmpeg 压制）。
 
 ---
 

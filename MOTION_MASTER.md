@@ -6,9 +6,9 @@
 
 `report-flow.mp4`：15.933秒，478帧，1080×1920，恒定30fps，H.264，48kHz双声道。
 
-全部通过 `clone-any-video` 原生工具执行：真实MiMo配音、真实Chrome连续逐帧捕获、mix混音、media prepare-audio母带处理、compose合成、review审查。没有使用Remotion或Mock。
+全部通过 `clone-any-video` 原生媒体工具链执行：真实MiMo配音、真实Chrome连续逐帧捕获、mix混音、media prepare-audio母带处理、compose合成、review审查。
 
-视觉参考为原包展示页的海报大字、错层运动、色带转场、数字强调和独立尾卡。没有复用其品牌标识，也没有沿用五张同构文字卡。
+视觉设计采用现代营销视频的海报大字、错层运动、色带转场、数字强调和独立尾卡。
 
 ## 设计变化
 

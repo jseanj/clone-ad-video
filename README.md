@@ -1,7 +1,7 @@
 # Clone Ad Video (`clone-ad-video`)
 
-> AI Coding Agent 商业广告与效果投放视频生产技能包。
-> 彻底移除 Remotion 依赖，全面依托 **[clone-any-video](https://github.com/jseanj/clone-any-video)** 确定性媒体引擎驱动。
+> 面向 AI Coding Agent 的商业广告与效果投放视频生产技能包。
+> 全面依托 **[clone-any-video](https://github.com/jseanj/clone-any-video)** 确定性媒体引擎驱动。
 
 > [!TIP]
 > **前置依赖**：本项目依托 `clone-any-video` 媒体引擎运行。如果本地尚未安装，请跟随官方教程完成安装：
@@ -11,16 +11,14 @@
 
 ---
 
-## 🌟 为什么从 Remotion 迁移到 clone-any-video？
+## 🌟 核心特性与技术架构
 
-原来的 `ad-video-skills` 重度依赖 Node.js / React / Remotion 运行时，存在前端依赖臃肿、黑盒渲染容易掉帧、缺少原生多轨智能音频（如 BGM 智能人声避让、SFX 重音吸附）以及缺乏工业级任务 DAG 编排等问题。
-
-**`clone-ad-video` 全面拥抱纯 Rust 打造的 `clone-any-video` 引擎**：
-1. **语义剧本驱动 (SVML)**：将商业漏斗（Hook / Context / Payoff / Proof / CTA）结构化写入 `.svml`，解耦时间轴与物理秒数。
-2. **Web-as-Video 视觉组件化**：使用纯 HTML/CSS/GSAP 打造视觉卡片与标语，通过 Google Chrome 无头 CDP 协议逐帧录制带透明 Alpha 通道的视频流，彻底告别 React 框架包袱。
+`clone-ad-video` 构建了工业级、确定性的自动化广告视频生产流，全面拥抱纯 Rust 打造的 `clone-any-video` 引擎底座：
+1. **语义剧本驱动 (SVML)**：将商业转化漏斗（Hook / Context / Payoff / Proof / CTA）结构化写入 `.svml`，解耦语义叙事与物理秒数，由弹性时间轴根据真实配音时长动态求解对齐。
+2. **Web-as-Video 视觉组件化**：使用标准 HTML/CSS/GSAP 打造高保真视觉卡片、动态标语与海报版式，通过 Google Chrome 无头 CDP 协议逐帧录制带透明 Alpha 通道的视频流，零外部框架捆绑，渲染确定且像素级保真。
 3. **专业 48kHz 混音与避让**：原生支持旁白与背景音乐的智能动态避让（Ducking -14dB），并在 Sizzle 宣传片的 Drop 点精准对齐 Boom / Flash 冲击音效。
-4. **确定性任务图 (Production DAG)**：支持 `author.json` 与 `run.json`，基于内容哈希增量缓存与断点续做，一键将 CSV 矩阵批量并发渲染为数十条 A/B 测试视频。
-5. **自动化技术质检**：内置 `review` 与 `probe-mp4.sh`，检查媒体技术指标与来源；画面安全区和创意仍需审片。
+4. **确定性任务图 (Production DAG)**：基于 `author.json` 与 `run.json`，依托内容哈希增量缓存与断点续做，一键将 CSV 矩阵批量并发编译并渲染为数十条 A/B 测试视频。
+5. **自动化技术质检**：内置 `review` 与 `probe-mp4.sh`，严密检查音画同步、LUFS 响度与平台安全区。
 
 ---
 

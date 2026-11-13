@@ -2,7 +2,7 @@
 
 入口：`scripts/build-motion-ad.py`。使用同仓库 `examples/ad-creative-batch/variants.csv` 的第一行。
 
-这条母版展示海报大字、表格痛点、示意产品界面、指标计数、CTA收束和声音设计。引擎固定为 clone-any-video，不使用 Remotion。
+这条母版展示海报大字、表格痛点、示意产品界面、指标计数、CTA收束和声音设计。全流程由 clone-any-video 原生媒体工具链驱动。
 
 ```sh
 # 默认自动检测本地 clone-any-video 引擎及环境配置（亦可显式传入 --env-file /path/to/.env.local）

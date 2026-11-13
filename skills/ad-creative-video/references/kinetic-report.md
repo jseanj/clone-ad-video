@@ -1,8 +1,8 @@
 # Kinetic Report 母版：从卡片演示到连续广告
 
-本母版使用 `clone-any-video` 的原生生产图、Chrome 捕获、mix、media prepare-audio、compose、review。不依赖 Remotion、React、Node 或外部 GSAP CDN。
+本母版使用 `clone-any-video` 的原生生产图、Chrome 捕获、mix、media prepare-audio、compose、review。完全基于纯原生 Web-as-Video 技术，不依赖外部前端构建框架或第三方 CDN。
 
-视觉参考来自原包展示页的海报大字、交错入场、色带转场、产品揭示和尾卡收束；不是逐帧复制原作品。REPORT/FLOW 为演示品牌，仪表盘为示意 UI，不冒充真实产品界面。
+视觉结构采用专业海报大字、交错入场、色带转场、产品揭示和尾卡收束。REPORT/FLOW 为演示品牌，仪表盘为示意 UI，不冒充真实产品界面。
 
 ## 五段视觉职责
 

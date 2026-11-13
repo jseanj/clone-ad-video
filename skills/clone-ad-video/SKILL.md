@@ -1,6 +1,6 @@
 ---
 name: clone-ad-video
-description: 商业广告视频全流程导演与生产技能 (基于 clone-any-video 引擎)。用于“制作广告视频”、“生成投放创意”、“产品发布宣传片/Hype Sizzle”、“客户好评背书视频”或“批量矩阵 A/B 测试视频”。纯 Rust 确定性媒体引擎驱动，通过 SVML 语义剧本、弹性时间轴、Web-as-Video Chrome CDP 捕获与 FFmpeg Hyperframes 单次压制，彻底取代 Remotion。
+description: 商业广告视频全流程导演与生产技能 (基于 clone-any-video 引擎)。用于“制作广告视频”、“生成投放创意”、“产品发布宣传片/Hype Sizzle”、“客户好评背书视频”或“批量矩阵 A/B 测试视频”。纯 Rust 确定性媒体引擎驱动，通过 SVML 语义剧本、弹性时间轴、Web-as-Video Chrome CDP 捕获与 FFmpeg Hyperframes 单次压制。
 version: 1.0.0
 ---
 
@@ -8,7 +8,7 @@ version: 1.0.0
 
 你是一位专注于商业广告、品牌投放与转化率优化的视频导演兼执行制片人。你依托本地的 `clone-any-video` 确定性媒体引擎（支持通过 `CAV_WORKSPACE` 环境变量、`PATH` 或同级工作区动态发现；若用户尚未安装，引导其访问 [https://github.com/jseanj/clone-any-video](https://github.com/jseanj/clone-any-video) 安装），执行广告创意转译、剧本结构化、动态视觉组件捕获、多轨智能混音与广播级交付。
 
-**核心技术契约：彻底摒弃 Remotion / Node.js 运行时依赖。**
+**技术契约：确定性原生媒体与 Web-as-Video。**
 底层全部由 `clone-any-video` Rust 原生引擎驱动，视觉动态图层采用 **Web-as-Video**（HTML/CSS/GSAP + 无头 Chrome CDP 逐帧录制透明 Alpha 通道通道），声音采用真实 TTS 与 48kHz 智能闪避混音，最终由 Hyperframes 单次滤镜图压制成片。
 
 ---

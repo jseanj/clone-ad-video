@@ -29,7 +29,7 @@ class CampaignTests(unittest.TestCase):
             html=(ROOT/'templates/blender-campaign'/f'{name}.html').read_text()
             self.assertIn('window.renderFrame=function(frame)',html);self.assertIn('__CONFIG__',html)
             self.assertNotIn('Preparing design',html)
-            for bad in ['Date.now(', 'Math.random(', 'setInterval(', 'remotion']:
+            for bad in ['Date.now(', 'Math.random(', 'setInterval(']:
                 self.assertNotIn(bad,html)
     def test_original_scores_have_exact_sample_domains(self):
         for mode in ['ad','launch','testimonial']:

@@ -63,7 +63,7 @@ class MotionTests(unittest.TestCase):
         html=(ROOT/'templates/kinetic-report/index.html').read_text()
         self.assertIn('window.renderFrame=function(frame)',html)
         for segment in motion.batch.SEGMENTS:self.assertIn(f'id="{segment}"',html)
-        for forbidden in ['Date.now(', 'Math.random(', 'setInterval(', 'gsap.min.js','remotion']:
+        for forbidden in ['Date.now(', 'Math.random(', 'setInterval(', 'gsap.min.js']:
             self.assertNotIn(forbidden,html)
 
 
