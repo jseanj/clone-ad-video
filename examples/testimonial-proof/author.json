@@ -1,0 +1,47 @@
+{
+  "format": "clone-any-video.author@1",
+  "tasks": [
+    {
+      "id": "voice-lead",
+      "action": {
+        "producer": "voice",
+        "voice": "Mia",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "quote_lead"
+        }
+      }
+    },
+    {
+      "id": "voice-signoff",
+      "action": {
+        "producer": "voice",
+        "voice": "Mia",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "author_signoff"
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "final.video": {
+      "task": "voice-lead",
+      "port": "audio"
+    },
+    "final.review": {
+      "task": "voice-signoff",
+      "port": "audio"
+    }
+  }
+}

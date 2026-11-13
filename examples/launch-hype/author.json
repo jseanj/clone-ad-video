@@ -1,0 +1,63 @@
+{
+  "format": "clone-any-video.author@1",
+  "tasks": [
+    {
+      "id": "voice-hook",
+      "action": {
+        "producer": "voice",
+        "voice": "Mia",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "hook"
+        }
+      }
+    },
+    {
+      "id": "voice-reveal",
+      "action": {
+        "producer": "voice",
+        "voice": "Mia",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "reveal"
+        }
+      }
+    },
+    {
+      "id": "voice-outro",
+      "action": {
+        "producer": "voice",
+        "voice": "Mia",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "outro"
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "final.video": {
+      "task": "voice-hook",
+      "port": "audio"
+    },
+    "final.review": {
+      "task": "voice-outro",
+      "port": "audio"
+    }
+  }
+}

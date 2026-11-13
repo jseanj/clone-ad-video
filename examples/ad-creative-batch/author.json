@@ -1,0 +1,339 @@
+{
+  "format": "clone-any-video.author@1",
+  "tasks": [
+    {
+      "id": "voice-hook",
+      "action": {
+        "producer": "voice",
+        "voice": "alloy",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "hook"
+        }
+      }
+    },
+    {
+      "id": "voice-context",
+      "action": {
+        "producer": "voice",
+        "voice": "alloy",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "context"
+        }
+      }
+    },
+    {
+      "id": "voice-payoff",
+      "action": {
+        "producer": "voice",
+        "voice": "alloy",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "payoff"
+        }
+      }
+    },
+    {
+      "id": "voice-proof",
+      "action": {
+        "producer": "voice",
+        "voice": "alloy",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "proof"
+        }
+      }
+    },
+    {
+      "id": "voice-outro",
+      "action": {
+        "producer": "voice",
+        "voice": "alloy",
+        "language": "en"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech",
+          "segment": "outro"
+        }
+      }
+    },
+    {
+      "id": "align",
+      "action": {
+        "producer": "realign",
+        "fps": 30,
+        "gap": 0
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech"
+        },
+        "layout": {
+          "kind": "file",
+          "path": "layout.json",
+          "type": "project"
+        },
+        "voice:hook": {
+          "kind": "output",
+          "output": "voice-hook.audio"
+        },
+        "voice:context": {
+          "kind": "output",
+          "output": "voice-context.audio"
+        },
+        "voice:payoff": {
+          "kind": "output",
+          "output": "voice-payoff.audio"
+        },
+        "voice:proof": {
+          "kind": "output",
+          "output": "voice-proof.audio"
+        },
+        "voice:outro": {
+          "kind": "output",
+          "output": "voice-outro.audio"
+        }
+      }
+    },
+    {
+      "id": "mix",
+      "action": {
+        "producer": "mix"
+      },
+      "inputs": {
+        "script": {
+          "kind": "script",
+          "path": "script.svml",
+          "view": "speech"
+        },
+        "project": {
+          "kind": "output",
+          "output": "align.project"
+        },
+        "voice:hook": {
+          "kind": "output",
+          "output": "voice-hook.audio"
+        },
+        "voice:context": {
+          "kind": "output",
+          "output": "voice-context.audio"
+        },
+        "voice:payoff": {
+          "kind": "output",
+          "output": "voice-payoff.audio"
+        },
+        "voice:proof": {
+          "kind": "output",
+          "output": "voice-proof.audio"
+        },
+        "voice:outro": {
+          "kind": "output",
+          "output": "voice-outro.audio"
+        }
+      }
+    },
+    {
+      "id": "card-hook",
+      "action": {
+        "producer": "render-html",
+        "frames": 30,
+        "config": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "crf": 20,
+          "preset": "fast",
+          "transparent": false,
+          "timeout_seconds": 30
+        }
+      },
+      "inputs": {
+        "html": {
+          "kind": "file",
+          "path": "hook_card.html",
+          "type": "html"
+        }
+      }
+    },
+    {
+      "id": "card-context",
+      "action": {
+        "producer": "render-html",
+        "frames": 30,
+        "config": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "crf": 20,
+          "preset": "fast",
+          "transparent": false,
+          "timeout_seconds": 30
+        }
+      },
+      "inputs": {
+        "html": {
+          "kind": "file",
+          "path": "context_card.html",
+          "type": "html"
+        }
+      }
+    },
+    {
+      "id": "card-payoff",
+      "action": {
+        "producer": "render-html",
+        "frames": 30,
+        "config": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "crf": 20,
+          "preset": "fast",
+          "transparent": false,
+          "timeout_seconds": 30
+        }
+      },
+      "inputs": {
+        "html": {
+          "kind": "file",
+          "path": "payoff_card.html",
+          "type": "html"
+        }
+      }
+    },
+    {
+      "id": "card-proof",
+      "action": {
+        "producer": "render-html",
+        "frames": 30,
+        "config": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "crf": 20,
+          "preset": "fast",
+          "transparent": false,
+          "timeout_seconds": 30
+        }
+      },
+      "inputs": {
+        "html": {
+          "kind": "file",
+          "path": "proof_card.html",
+          "type": "html"
+        }
+      }
+    },
+    {
+      "id": "card-outro",
+      "action": {
+        "producer": "render-html",
+        "frames": 30,
+        "config": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30,
+          "crf": 20,
+          "preset": "fast",
+          "transparent": false,
+          "timeout_seconds": 30
+        }
+      },
+      "inputs": {
+        "html": {
+          "kind": "file",
+          "path": "outro_card.html",
+          "type": "html"
+        }
+      }
+    },
+    {
+      "id": "compose",
+      "action": {
+        "producer": "compose"
+      },
+      "inputs": {
+        "project": {
+          "kind": "output",
+          "output": "align.project"
+        },
+        "audio": {
+          "kind": "output",
+          "output": "mix.audio"
+        },
+        "background:shot_hook": {
+          "kind": "output",
+          "output": "card-hook.video"
+        },
+        "background:shot_context": {
+          "kind": "output",
+          "output": "card-context.video"
+        },
+        "background:shot_payoff": {
+          "kind": "output",
+          "output": "card-payoff.video"
+        },
+        "background:shot_proof": {
+          "kind": "output",
+          "output": "card-proof.video"
+        },
+        "background:shot_outro": {
+          "kind": "output",
+          "output": "card-outro.video"
+        }
+      }
+    },
+    {
+      "id": "review",
+      "action": {
+        "producer": "review"
+      },
+      "inputs": {
+        "project": {
+          "kind": "output",
+          "output": "compose.project"
+        },
+        "video": {
+          "kind": "output",
+          "output": "compose.video"
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "final.video": {
+      "task": "compose",
+      "port": "video"
+    },
+    "final.review": {
+      "task": "review",
+      "port": "report"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "brand": "Blender",
+  "verified_on": "2026-11-13",
+  "official_url": "https://www.blender.org/",
+  "sources": [
+    {
+      "url": "https://www.blender.org/about/",
+      "supports": [
+        "免费开源的定位"
+      ],
+      "kind": "official"
+    },
+    {
+      "url": "https://www.blender.org/press/blender-5-2-lts-release/",
+      "supports": [
+        "2026-07-14发布5.2 LTS",
+        "支持至2028年7月",
+        "在线资产库",
+        "几何节点与纹理缓存"
+      ],
+      "kind": "official"
+    },
+    {
+      "url": "https://www.blender.org/download/releases/5-2/",
+      "supports": [
+        "5.2 LTS功能和支持期限"
+      ],
+      "kind": "official"
+    },
+    {
+      "url": "https://news.ubisoft.com/en-us/article/1Fse1XyXzj76UJ1gKFohbz/ubisoft-joins-blender-development-fund-to-support-open-source-animation",
+      "supports": [
+        "Pierrot Jacquet公开引言",
+        "2019-07-22时任身份"
+      ],
+      "kind": "first-party interview"
+    },
+    {
+      "url": "https://www.blender.org/features/",
+      "supports": [
+        "建模、动画、渲染、合成的完整流程"
+      ],
+      "kind": "official"
+    }
+  ],
+  "videos": {
+    "ad": {
+      "skill": "ad-creative-video",
+      "voice": "冰糖",
+      "language": "zh",
+      "tail": 1.8,
+      "bpm": 120,
+      "segments": [
+        {
+          "id": "hook",
+          "text": "想做三维？先别买软件。"
+        },
+        {
+          "id": "context",
+          "text": "从建模、动画，到渲染和合成。"
+        },
+        {
+          "id": "payoff",
+          "text": "Blender，把创作流程放在一起。"
+        },
+        {
+          "id": "proof",
+          "text": "免费，开源。你的下一件作品，现在就能开始。"
+        },
+        {
+          "id": "outro",
+          "text": "打开官网，下载 Blender。"
+        }
+      ]
+    },
+    "launch": {
+      "skill": "launch-video",
+      "voice": "冰糖",
+      "language": "zh",
+      "duration": 24,
+      "bpm": 150,
+      "drop": 6.4,
+      "segments": [
+        {
+          "id": "hook",
+          "text": "让想象，拥有形状。",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "id": "tease",
+          "text": "把下一步，交给更自由的创作。",
+          "start": 2.4,
+          "end": 6.4
+        },
+        {
+          "id": "reveal",
+          "text": "五点二，长期支持版。",
+          "start": 6.4,
+          "end": 9.6
+        },
+        {
+          "id": "nodes",
+          "text": "节点，连接每一种可能。",
+          "start": 9.6,
+          "end": 12.8
+        },
+        {
+          "id": "assets",
+          "text": "在线资产库，随需而取。",
+          "start": 12.8,
+          "end": 16
+        },
+        {
+          "id": "support",
+          "text": "支持至二零二八年七月。",
+          "start": 16,
+          "end": 19.2
+        },
+        {
+          "id": "outro",
+          "text": "创作，自由向前。打开官网，探索五点二。",
+          "start": 19.2,
+          "end": 24
+        }
+      ]
+    },
+    "testimonial": {
+      "skill": "testimonial-video",
+      "voice": "冰糖",
+      "language": "zh",
+      "duration": 12,
+      "bpm": 80,
+      "quote": "Blender was, for us, an obvious choice",
+      "translation": "对我们来说，Blender 是显而易见的选择。",
+      "author": "Pierrot Jacquet",
+      "role": "时任制作负责人",
+      "company": "Ubisoft Animation Studio",
+      "quote_date": "2019-07-22",
+      "segments": [
+        {
+          "id": "quote",
+          "text": "对我们来说，Blender 是显而易见的选择。",
+          "start": 1.0,
+          "end": 8.0
+        }
+      ],
+      "master_lufs": -14.0
+    }
+  }
+}

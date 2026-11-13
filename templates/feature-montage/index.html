@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+<title>Feature Montage Metric Card</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1920px;
+    background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .metric-card {
+    width: 900px;
+    background: rgba(15, 23, 42, 0.92);
+    border: 2px solid #10b981;
+    border-radius: 36px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 30px 80px -15px rgba(16, 185, 129, 0.3);
+    opacity: 0;
+    transform: scale(0.88);
+  }
+
+  .stat-number {
+    font-size: 130px;
+    font-weight: 900;
+    line-height: 1;
+    color: #10b981;
+    letter-spacing: -0.04em;
+  }
+
+  .stat-label {
+    font-size: 38px;
+    font-weight: 700;
+    color: #f8fafc;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .stat-sub {
+    font-size: 28px;
+    color: #94a3b8;
+  }
+</style>
+</head>
+<body>
+
+<div class="metric-card">
+  <div class="stat-number">10×</div>
+  <div class="stat-label">Faster Query Engine</div>
+  <div class="stat-sub">Validated across 50,000,000 real production records</div>
+</div>
+
+<script>
+  const tl = gsap.timeline({ paused: true });
+
+  tl.to(".metric-card", {
+    opacity: 1,
+    scale: 1,
+    duration: 0.3,
+    ease: "back.out(1.5)"
+  }, 0.05);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const seekTime = parseFloat(urlParams.get("t"));
+  if (!isNaN(seekTime)) {
+    tl.seek(seekTime);
+  } else {
+    tl.play();
+  }
+</script>
+</body>
+</html>

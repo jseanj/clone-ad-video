@@ -1,0 +1,14 @@
+{
+  "name": "clone-ad-video",
+  "owner": {
+    "name": "jseanj",
+    "url": "https://github.com/jseanj"
+  },
+  "plugins": [
+    {
+      "name": "clone-ad-video",
+      "source": "./",
+      "description": "Professional ad video production skills powered by clone-any-video engine (SVML + Web-as-Video Chrome CDP + single-pass FFmpeg)."
+    }
+  ]
+}

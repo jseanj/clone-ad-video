@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1920, initial-scale=1.0">
+<title>Hook Title Banner</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px;
+    height: 1920px;
+    background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 280px; /* Safe from top status bar */
+    overflow: hidden;
+  }
+
+  .badge {
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 10px 24px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  .hook-container {
+    width: 900px;
+    text-align: center;
+  }
+
+  .hook-title {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1.12;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .hook-title span.accent {
+    color: #38bdf8;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<div class="badge">STOP SCROLLING</div>
+<div class="hook-container">
+  <h1 class="hook-title">
+    Still spending 2 hours a day on <span class="accent">manual reports</span>?
+  </h1>
+</div>
+
+<script>
+  const tl = gsap.timeline({ paused: true });
+
+  tl.to(".badge", { opacity: 1, scale: 1, duration: 0.28, ease: "back.out(1.7)" }, 0.05)
+    .to(".hook-title", { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.15);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const seekTime = parseFloat(urlParams.get("t"));
+  if (!isNaN(seekTime)) {
+    tl.seek(seekTime);
+  } else {
+    tl.play();
+  }
+</script>
+</body>
+</html>

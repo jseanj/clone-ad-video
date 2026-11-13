@@ -1,0 +1,7 @@
+<script id="launch_hype_demo">
+  <hook><HOST>Speed changed forever.</hook>
+  <tease><HOST>What if your production pipeline ran with zero latency?</tease>
+  <reveal><HOST>Introducing Aurora Engine.</reveal>
+  <montage><HOST>Instant compilation. Deterministic frames. Hyperframes composition.</montage>
+  <outro><HOST>Build the future at aurora.dev.</outro>
+</script>

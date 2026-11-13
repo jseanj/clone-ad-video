@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Environments & Local credentials
+.env
+.env.local
+.venv
+env/
+venv/
+
+# Build artifacts & outputs
+output/
+outputs/
+runs/
+review_runs/
+motion_runs/
+*.mp4
+*.wav
+*.log
+.production/
+target/

@@ -1,0 +1,24 @@
+{
+  "name": "clone-ad-video",
+  "version": "1.0.0",
+  "description": "Professional advertising video production skills powered by clone-any-video. Generates A/B testable ad creatives, product launch sizzle films, and testimonial proof videos using SVML, elastic timeline solving, Web-as-Video Chrome CDP capture, and FFmpeg single-pass compositing.",
+  "author": {
+    "name": "jseanj",
+    "url": "https://github.com/jseanj"
+  },
+  "homepage": "https://github.com/jseanj/clone-ad-video",
+  "repository": "https://github.com/jseanj/clone-ad-video",
+  "license": "MIT",
+  "keywords": [
+    "ad-creative",
+    "advertising-video",
+    "video-ad",
+    "launch-video",
+    "testimonial-video",
+    "marketing-video",
+    "clone-any-video",
+    "svml",
+    "web-as-video",
+    "claude-skill"
+  ]
+}

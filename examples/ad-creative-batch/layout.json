@@ -1,0 +1,225 @@
+{
+  "format": "clone-any-video.project@1",
+  "meta": {
+    "id": "script",
+    "title": "script",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "total_seconds": 25,
+    "total_frames": 750
+  },
+  "shots": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 5,
+      "start_frame": 0,
+      "end_frame": 150,
+      "id": "shot_hook",
+      "segment_id": "hook",
+      "shot_index": 1,
+      "duration_seconds": 5,
+      "visual_type": "GeneratedVideo",
+      "description": "Animated hook card",
+      "prompt_hint": ""
+    },
+    {
+      "start_seconds": 5,
+      "end_seconds": 10,
+      "start_frame": 150,
+      "end_frame": 300,
+      "id": "shot_context",
+      "segment_id": "context",
+      "shot_index": 2,
+      "duration_seconds": 5,
+      "visual_type": "GeneratedVideo",
+      "description": "Animated context card",
+      "prompt_hint": ""
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "start_frame": 300,
+      "end_frame": 450,
+      "id": "shot_payoff",
+      "segment_id": "payoff",
+      "shot_index": 3,
+      "duration_seconds": 5,
+      "visual_type": "GeneratedVideo",
+      "description": "Animated payoff card",
+      "prompt_hint": ""
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 20,
+      "start_frame": 450,
+      "end_frame": 600,
+      "id": "shot_proof",
+      "segment_id": "proof",
+      "shot_index": 4,
+      "duration_seconds": 5,
+      "visual_type": "GeneratedVideo",
+      "description": "Animated proof card",
+      "prompt_hint": ""
+    },
+    {
+      "start_seconds": 20,
+      "end_seconds": 25,
+      "start_frame": 600,
+      "end_frame": 750,
+      "id": "shot_outro",
+      "segment_id": "outro",
+      "shot_index": 5,
+      "duration_seconds": 5,
+      "visual_type": "GeneratedVideo",
+      "description": "Animated outro card",
+      "prompt_hint": ""
+    }
+  ],
+  "tracks": {
+    "visual_bg": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 5,
+        "start_frame": 0,
+        "end_frame": 150,
+        "id": "bg_shot_hook",
+        "name": "hook",
+        "payload": {
+          "shot_id": "shot_hook",
+          "sampling": {
+            "shortage": "hold"
+          }
+        }
+      },
+      {
+        "start_seconds": 5,
+        "end_seconds": 10,
+        "start_frame": 150,
+        "end_frame": 300,
+        "id": "bg_shot_context",
+        "name": "context",
+        "payload": {
+          "shot_id": "shot_context",
+          "sampling": {
+            "shortage": "hold"
+          }
+        }
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 15,
+        "start_frame": 300,
+        "end_frame": 450,
+        "id": "bg_shot_payoff",
+        "name": "payoff",
+        "payload": {
+          "shot_id": "shot_payoff",
+          "sampling": {
+            "shortage": "hold"
+          }
+        }
+      },
+      {
+        "start_seconds": 15,
+        "end_seconds": 20,
+        "start_frame": 450,
+        "end_frame": 600,
+        "id": "bg_shot_proof",
+        "name": "proof",
+        "payload": {
+          "shot_id": "shot_proof",
+          "sampling": {
+            "shortage": "hold"
+          }
+        }
+      },
+      {
+        "start_seconds": 20,
+        "end_seconds": 25,
+        "start_frame": 600,
+        "end_frame": 750,
+        "id": "bg_shot_outro",
+        "name": "outro",
+        "payload": {
+          "shot_id": "shot_outro",
+          "sampling": {
+            "shortage": "hold"
+          }
+        }
+      }
+    ],
+    "visual_components": [],
+    "captions": [],
+    "voice": [
+      {
+        "start_seconds": 0,
+        "end_seconds": 5,
+        "start_frame": 0,
+        "end_frame": 150,
+        "id": "voice_hook",
+        "name": "hook",
+        "payload": {
+          "spoken_text": "Spending 2 hours a day on manual reports?",
+          "timing_status": "estimated",
+          "turns_count": 1
+        }
+      },
+      {
+        "start_seconds": 5,
+        "end_seconds": 10,
+        "start_frame": 150,
+        "end_frame": 300,
+        "id": "voice_context",
+        "name": "context",
+        "payload": {
+          "spoken_text": "Most managers drown in scattered spreadsheets every week.",
+          "timing_status": "estimated",
+          "turns_count": 1
+        }
+      },
+      {
+        "start_seconds": 10,
+        "end_seconds": 15,
+        "start_frame": 300,
+        "end_frame": 450,
+        "id": "voice_payoff",
+        "name": "payoff",
+        "payload": {
+          "spoken_text": "One click builds your entire executive dashboard.",
+          "timing_status": "estimated",
+          "turns_count": 1
+        }
+      },
+      {
+        "start_seconds": 15,
+        "end_seconds": 20,
+        "start_frame": 450,
+        "end_frame": 600,
+        "id": "voice_proof",
+        "name": "proof",
+        "payload": {
+          "spoken_text": "Save 11 hours every single week.",
+          "timing_status": "estimated",
+          "turns_count": 1
+        }
+      },
+      {
+        "start_seconds": 20,
+        "end_seconds": 25,
+        "start_frame": 600,
+        "end_frame": 750,
+        "id": "voice_outro",
+        "name": "outro",
+        "payload": {
+          "spoken_text": "Save 2 Hours — Start Your 14-Day Free Trial",
+          "timing_status": "estimated",
+          "turns_count": 1
+        }
+      }
+    ],
+    "bgm": [],
+    "sfx": []
+  },
+  "asset_tasks": []
+}
